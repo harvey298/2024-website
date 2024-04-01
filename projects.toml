@@ -6,6 +6,7 @@ dev_status = "alpha"
 maintenance = "active"
 languages = ["js", "html","css"]
 tools = ["vite"]
+src = "https://github.com/harvey298/2024-website"
 
 [[project]]
 name = "olympus"
@@ -42,6 +43,7 @@ dev_status = "beta"
 maintenance = "active"
 languages = ["rust"]
 tools = []
+src = "https://github.com/garhow/steam-rs"
 
 [[project]]
 name = "passenger"

@@ -5,7 +5,7 @@ const PROJECTS = [
         <a href="project_website.html">
             <div class="project">
                 <h2 class="project-title"><b>Website</b></h2>
-                <p>This website.</p><div class="badge open-source">Open Source</div> <div class="badge alpha">Alpha</div> <div class="badge active">Active</div> <div class="badge js">Language: js</div><div class="badge html">Language: html</div><div class="badge css">Language: css</div> <div class="badge framework">Framework: Vite</div>
+                <p>This website.</p><a class="badge open-source" href="https://github.com/harvey298/2024-website" target="_blank">Open Source</a> <div class="badge alpha">Alpha</div> <div class="badge active">Active</div> <div class="badge js">Language: js</div><div class="badge html">Language: html</div><div class="badge css">Language: css</div> <div class="badge framework">Framework: Vite</div>
             </div>
         </a></td>`,`<td>
         <a href="project_olympus.html">
@@ -29,7 +29,7 @@ const PROJECTS = [
         <a href="project_steam.rs.html">
             <div class="project">
                 <h2 class="project-title"><b>Steam.rs</b></h2>
-                <p>Steamworks api in Rust-lang.</p><div class="badge open-source">Open Source</div> <div class="badge beta">Beta</div> <div class="badge active">Active</div> <div class="badge rust">Language: rust</div> 
+                <p>Steamworks api in Rust-lang.</p><a class="badge open-source" href="https://github.com/garhow/steam-rs" target="_blank">Open Source</a> <div class="badge beta">Beta</div> <div class="badge active">Active</div> <div class="badge rust">Language: rust</div> 
             </div>
         </a></td>`,`<td>
         <a href="project_passenger.html">

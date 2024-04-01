@@ -105,7 +105,10 @@ with open("./projects.toml", "r") as f:
         description = project["description"]
         source_status = project["source_status"]
         if source_status == "open":
-            source_status = '<div class="badge open-source">Open Source</div>'
+            try:
+                source_status = f'<a class="badge open-source" href="{project["src"]}" target="_blank">Open Source</a>'
+            except KeyError:
+                source_status = '<div class="badge open-source">Open Source</div>'
         elif source_status == "planned":
             source_status = '<div class="badge planned-open-source">Planned to be Open Source</div>'
         else:
@@ -165,3 +168,7 @@ with open("./projects.toml", "r") as f:
 
 with open("./projects/projects.js", "w+") as f:
     f.write(data_to_write)
+
+with open("./404.html", "r") as src:
+    with open("./projects/404.html", "w+") as dest:
+        dest.write(src.read())
