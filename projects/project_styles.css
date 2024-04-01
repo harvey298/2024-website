@@ -1,5 +1,128 @@
+body {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  overflow-y:auto;
+  width: fit-content;
+}
+
+a {
+  color: inherit; /* Or specify your desired color */
+  text-decoration: none; /* Optionally remove underline */
+}
+
+
 .project {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-  }
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  min-width: 250px;
+  min-height: 250px;
+}
+
+.project-title {
+  font-size: 30px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.open-source {
+  background-color: green;
+  color: white;
+}
+
+.closed-source {
+  background-color: red;
+  color: white;
+}
+
+.planned-open-source {
+  background-color: orange;
+  color: black;
+}
+
+.alpha {
+  background-color: orange;
+  color: white;
+}
+
+.beta {
+  background-color: #007bff; /* Blue */
+  color: white;
+}
+
+.stable {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+.active {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+.maintenance {
+  background-color: orange;
+  color: black;
+}
+
+.deprecated {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+/* Languages */
+.rust {
+  background-color: #dea584; /* Rust-lang color */
+  color: white;
+}
+
+.go {
+  background-color: #29b9da; /* Go color */
+  color: white;
+}
+
+.python {
+  background-color: #3572A5; /* Python color */
+  color: white;
+}
+
+.js {
+  background-color: #f1e05a; /* JavaScript color */
+  color: black; /* You can adjust the text color */
+}
+
+.html {
+  background-color: #e44d26; /* HTML color */
+  color: white;
+}
+
+.css {
+  background-color: #264de4; /* CSS color */
+  color: white;
+}
+
+.ai {
+  background-color: #ff7b00; /* AI color */
+  color: white;
+}
+
+.framework {
+  background-color: #2b5797; /* Framework color */
+  color: white;
+}
+
+.blank-language {
+  background-color: #555; /* Generic color */
+  color: white;
+}

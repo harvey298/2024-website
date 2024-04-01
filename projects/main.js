@@ -1,6 +1,6 @@
 import '../style.css'
 import './project_styles.css'
-
+import {addProject} from './projects.js'
 
 document.querySelector('#app').innerHTML = `
 <div>
@@ -8,20 +8,19 @@ document.querySelector('#app').innerHTML = `
   <h1>My Projects!</h1>
   <p>(Over the past 8 years)</p>
 </div>
+
+<input type="number" min="1" id="width_selector" placeholder="Rows"></input>
+
 <div class="card">
-  <a href="project1.html">
-    <div class="project">
-      <h2>Project 1</h2>
-      <p>This is a brief summary of Project 1.</p>
-    </div>
-  </a>
-  <a href="project2.html">
-    <div class="project">
-      <h2>Project 2</h2>
-      <p>This is a brief summary of Project 2.</p>
-    </div>
-  </a>
-  <!-- Add more projects as needed -->
+
+
 </div>
 </div>
 `
+
+addProject(4);
+
+document.querySelector('#width_selector').addEventListener('change', (event) => {
+
+  addProject(Number(event.target.value));
+})

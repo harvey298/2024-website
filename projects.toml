@@ -1,0 +1,62 @@
+[[project]]
+name = "website"
+description = "This website"
+source_status = "open"
+dev_status = "alpha"
+maintenance = "active"
+languages = ["js", "html","css"]
+tools = ["vite"]
+
+[[project]]
+name = "olympus"
+description = "Machine Learning powered stock trading algorithm"
+source_status = "closed"
+dev_status = "stable"
+maintenance = "maintenance"
+languages = ["rust"]
+tools = ["pytorch"]
+
+[[project]]
+name = "avaritia"
+description = "Cryptocurrency trading bot"
+source_status = "closed"
+dev_status = "stable"
+maintenance = "active"
+languages = ["rust"]
+tools = []
+
+[[project]]
+name = "vigil"
+description = "bee-hive health"
+source_status = "closed"
+dev_status = "alpha"
+maintenance = "active"
+languages = ["rust", "python"]
+tools = ["pytorch"]
+
+[[project]]
+name = "steam.rs"
+description = "Steamworks api in Rust-lang"
+source_status = "open"
+dev_status = "beta"
+maintenance = "active"
+languages = ["rust"]
+tools = []
+
+[[project]]
+name = "passenger"
+description = "Machine Learning powered computer assistant"
+source_status = "planned"
+dev_status = "stable"
+maintenance = "maintenance"
+languages = ["rust", "html","css", "js"]
+tools = ["tauri","wolfram/miquliz","gpt-4"]
+
+[[project]]
+name = "venture/navigator"
+description = "Job search engine"
+source_status = "planned"
+dev_status = "beta"
+maintenance = "active"
+languages = ["rust"]
+tools = []
