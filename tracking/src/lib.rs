@@ -45,7 +45,7 @@ pub async fn check_url_argument() -> Result<(), JsValue> {
                 if value == "company_test" {
                     add_banner("Hello [COMPANY NAME]!", false)?;
                 } else {
-                    let url = "http://localhost:8080/stat";
+                    let url = "http://api.hoovy.co.uk/stat";
                     
                     let client = reqwest::Client::new();
 
