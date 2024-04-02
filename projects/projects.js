@@ -5,7 +5,7 @@ const PROJECTS = [
         <a href="project_website.html">
             <div class="project">
                 <h2 class="project-title"><b>Website</b></h2>
-                <p>This website.</p><a class="badge open-source" href="https://github.com/harvey298/2024-website" target="_blank">Open Source</a> <div class="badge alpha">Alpha</div> <div class="badge active">Active</div> <div class="badge js">Language: js</div><div class="badge html">Language: html</div><div class="badge css">Language: css</div> <div class="badge framework">Framework: Vite</div>
+                <p>This website.</p><a class="badge open-source" href="https://github.com/harvey298/2024-website" target="_blank">Open Source</a> <div class="badge alpha">Alpha</div> <div class="badge active">Active</div> <div class="badge js">Language: js</div><div class="badge html">Language: html</div><div class="badge css">Language: css</div><div class="badge rust">Language: rust</div><div class="badge blank-language">Language: wasm</div> <div class="badge framework">Framework: Vite</div>
             </div>
         </a></td>`,`<td>
         <a href="project_olympus.html">
@@ -38,10 +38,16 @@ const PROJECTS = [
                 <p>Machine Learning powered computer assistant.</p><div class="badge planned-open-source">Planned to be Open Source</div> <div class="badge stable">Stable</div> <div class="badge maintenance">In Maintenance</div> <div class="badge rust">Language: rust</div><div class="badge html">Language: html</div><div class="badge css">Language: css</div><div class="badge js">Language: js</div> <div class="badge framework">Framework: tauri</div><div class="badge ai">Ai: Miquliz</div><div class="badge framework">Tool: gpt-4</div>
             </div>
         </a></td>`,`<td>
-        <a href="project_venture/navigator.html">
+        <a href="project_venturenavigator.html">
             <div class="project">
                 <h2 class="project-title"><b>Venture/Navigator</b></h2>
                 <p>Job search engine.</p><div class="badge planned-open-source">Planned to be Open Source</div> <div class="badge beta">Beta</div> <div class="badge active">Active</div> <div class="badge rust">Language: rust</div> 
+            </div>
+        </a></td>`,`<td>
+        <a href="project_hoover_api.html">
+            <div class="project">
+                <h2 class="project-title"><b>Hoover Api</b></h2>
+                <p>The secret backend for this website.</p><div class="badge closed-source">Closed Source</div> <div class="badge stable">Stable</div> <div class="badge active">Active</div> <div class="badge rust">Language: rust</div> 
             </div>
         </a></td>`,
 ]
@@ -59,11 +65,8 @@ export function addProject(width_selector) {
         if (loops > 5) {
             width_selector = 1;
         }
-        console.log("Width: "+width_selector);
         buffer = '<table><tr>';
         for (let i = 0; i < PROJECTS.length; i++) {
-            console.log(i % width_selector);
-            console.log(i % width_selector === 0);
 
             if (i % width_selector === 0) {
                 buffer += '</tr><tr>';
@@ -78,10 +81,8 @@ export function addProject(width_selector) {
         if (loops > 5) { break; }
 
         // var screenWidth = window.screen.width;
-        console.log("Screen width: " + footer.scrollWidth, "Contain width: " + contain.clientWidth);
 
         if (contain.clientWidth > footer.scrollWidth-100) {
-            console.log("Overflown");
             width_selector--;
         } else { break }
 

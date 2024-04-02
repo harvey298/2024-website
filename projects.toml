@@ -4,7 +4,7 @@ description = "This website"
 source_status = "open"
 dev_status = "alpha"
 maintenance = "active"
-languages = ["js", "html","css"]
+languages = ["js", "html","css", "rust", "wasm"]
 tools = ["vite"]
 src = "https://github.com/harvey298/2024-website"
 
@@ -62,3 +62,12 @@ dev_status = "beta"
 maintenance = "active"
 languages = ["rust"]
 tools = []
+
+[[project]]
+name = "hoover api"
+description = "The secret backend for this website"
+source_status = "closed"
+dev_status = "stable"
+maintenance = "active"
+languages = ["rust", "python"]
+tools = ["robyn"]

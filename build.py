@@ -62,11 +62,8 @@ export function addProject(width_selector) {
         if (loops > 5) {
             width_selector = 1;
         }
-        console.log("Width: "+width_selector);
         buffer = '<table><tr>';
         for (let i = 0; i < PROJECTS.length; i++) {
-            console.log(i % width_selector);
-            console.log(i % width_selector === 0);
 
             if (i % width_selector === 0) {
                 buffer += '</tr><tr>';
@@ -81,10 +78,8 @@ export function addProject(width_selector) {
         if (loops > 5) { break; }
 
         // var screenWidth = window.screen.width;
-        console.log("Screen width: " + footer.scrollWidth, "Contain width: " + contain.clientWidth);
 
         if (contain.clientWidth > footer.scrollWidth-100) {
-            console.log("Overflown");
             width_selector--;
         } else { break }
 
@@ -97,9 +92,6 @@ with open("./projects.toml", "r") as f:
     projects = toml.load(f)
     buffer = "`"
     for (i, project) in enumerate(projects["project"]):
-
-        # if i % 4 == 0:
-        #     buffer += "</tr><tr>"
         
         name = project["name"]
         description = project["description"]
@@ -152,7 +144,7 @@ with open("./projects.toml", "r") as f:
                 tools += '<div class="badge framework">Tool: ' + tool + '</div>'
 
         buffer += f"""<td>
-        <a href="project_{name}.html">
+        <a href="project_{name.replace(" ", "_").lower().replace("/", "")}.html">
             <div class="project">
                 <h2 class="project-title"><b>{pretty(name)}</b></h2>
                 <p>{description}.</p>{source_status} {dev_status} {maintenance} {languages} {tools}
