@@ -47,6 +47,11 @@ td {
   /* min-height: 25em; */
 }
 
+.blank-language {
+  background-color: #555; /* Generic color */
+  color: white;
+}
+
 .project-title {
   font-size: 30px;
 }
@@ -143,10 +148,5 @@ td {
 
 .framework {
   background-color: #2b5797; /* Framework color */
-  color: white;
-}
-
-.blank-language {
-  background-color: #555; /* Generic color */
   color: white;
 }

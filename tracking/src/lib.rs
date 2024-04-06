@@ -2,9 +2,7 @@ mod utils;
 
 use serde_json::json;
 use utils::add_banner;
-use utils::add_element_to_dom;
 use web_sys::window;
-use web_sys::Location;
 use web_sys::console;
 use wasm_bindgen::prelude::*;
 use serde_json::Value;
@@ -56,7 +54,16 @@ pub async fn check_url_argument() -> Result<(), JsValue> {
 
                     let Ok(response) = response else { console_log("HTTP error!"); return Ok(()); };
 
-                    match response.json::<Value>().await {
+                    // Debug code
+                    let response = response.text().await.unwrap();
+
+                    console_log(&response);
+
+                    // End debug
+
+                    // response.json::<Value>().await
+
+                    match serde_json::from_str::<Value>(&response) {
                         Ok(response) => {
 
                             if let Some(data) = response.get("data") {

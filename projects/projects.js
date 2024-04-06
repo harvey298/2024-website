@@ -2,52 +2,52 @@
 
 const PROJECTS = [
     `<td>
-        <a href="project_website.html">
+        <a href="project?p=website">
             <div class="project">
                 <h2 class="project-title"><b>Website</b></h2>
-                <p>This website.</p><a class="badge open-source" href="https://github.com/harvey298/2024-website" target="_blank">Open Source</a> <div class="badge alpha">Alpha</div> <div class="badge active">Active</div> <div class="badge js">Language: js</div><div class="badge html">Language: html</div><div class="badge css">Language: css</div><div class="badge rust">Language: rust</div><div class="badge blank-language">Language: wasm</div> <div class="badge framework">Framework: Vite</div>
+                <p>This website.</p><a class="badge open-source" href="https://github.com/harvey298/2024-website" target="_blank">Open Source</a> <div class="badge alpha">Alpha</div> <div class="badge active">Active Development</div> <div class="badge js">Language: js</div><div class="badge html">Language: html</div><div class="badge css">Language: css</div><div class="badge rust">Language: rust</div><div class="badge blank-language">Language: wasm</div> <div class="badge framework">Framework: Vite</div>
             </div>
         </a></td>`,`<td>
-        <a href="project_olympus.html">
+        <a href="project?p=olympus">
             <div class="project">
                 <h2 class="project-title"><b>Olympus</b></h2>
                 <p>Machine Learning powered stock trading algorithm.</p><div class="badge closed-source">Closed Source</div> <div class="badge stable">Stable</div> <div class="badge maintenance">In Maintenance</div> <div class="badge rust">Language: rust</div> <div class="badge framework">Tool: pytorch</div>
             </div>
         </a></td>`,`<td>
-        <a href="project_avaritia.html">
+        <a href="project?p=avaritia">
             <div class="project">
                 <h2 class="project-title"><b>Avaritia</b></h2>
-                <p>Cryptocurrency trading bot.</p><div class="badge closed-source">Closed Source</div> <div class="badge stable">Stable</div> <div class="badge active">Active</div> <div class="badge rust">Language: rust</div> 
+                <p>Cryptocurrency trading bot.</p><div class="badge closed-source">Closed Source</div> <div class="badge stable">Stable</div> <div class="badge active">Active Development</div> <div class="badge rust">Language: rust</div> 
             </div>
         </a></td>`,`<td>
-        <a href="project_vigil.html">
+        <a href="project?p=vigil">
             <div class="project">
                 <h2 class="project-title"><b>Vigil</b></h2>
-                <p>bee-hive health.</p><div class="badge closed-source">Closed Source</div> <div class="badge alpha">Alpha</div> <div class="badge active">Active</div> <div class="badge rust">Language: rust</div><div class="badge python">Language: python</div> <div class="badge framework">Tool: pytorch</div>
+                <p>bee-hive health.</p><div class="badge closed-source">Closed Source</div> <div class="badge alpha">Alpha</div> <div class="badge active">Active Development</div> <div class="badge rust">Language: rust</div><div class="badge python">Language: python</div> <div class="badge framework">Tool: pytorch</div>
             </div>
         </a></td>`,`<td>
-        <a href="project_steam.rs.html">
+        <a href="project?p=steam.rs">
             <div class="project">
                 <h2 class="project-title"><b>Steam.rs</b></h2>
-                <p>Steamworks api in Rust-lang.</p><a class="badge open-source" href="https://github.com/garhow/steam-rs" target="_blank">Open Source</a> <div class="badge beta">Beta</div> <div class="badge active">Active</div> <div class="badge rust">Language: rust</div> 
+                <p>Steamworks api in Rust-lang.</p><a class="badge open-source" href="https://github.com/garhow/steam-rs" target="_blank">Open Source</a> <div class="badge beta">Beta</div> <div class="badge active">Active Development</div> <div class="badge rust">Language: rust</div> 
             </div>
         </a></td>`,`<td>
-        <a href="project_passenger.html">
+        <a href="project?p=passenger">
             <div class="project">
                 <h2 class="project-title"><b>Passenger</b></h2>
                 <p>Machine Learning powered computer assistant.</p><div class="badge planned-open-source">Planned to be Open Source</div> <div class="badge stable">Stable</div> <div class="badge maintenance">In Maintenance</div> <div class="badge rust">Language: rust</div><div class="badge html">Language: html</div><div class="badge css">Language: css</div><div class="badge js">Language: js</div> <div class="badge framework">Framework: tauri</div><div class="badge ai">Ai: Miquliz</div><div class="badge framework">Tool: gpt-4</div>
             </div>
         </a></td>`,`<td>
-        <a href="project_venturenavigator.html">
+        <a href="project?p=venturenavigator">
             <div class="project">
                 <h2 class="project-title"><b>Venture/Navigator</b></h2>
-                <p>Job search engine.</p><div class="badge planned-open-source">Planned to be Open Source</div> <div class="badge beta">Beta</div> <div class="badge active">Active</div> <div class="badge rust">Language: rust</div> 
+                <p>Job search engine.</p><div class="badge planned-open-source">Planned to be Open Source</div> <div class="badge beta">Beta</div> <div class="badge active">Active Development</div> <div class="badge rust">Language: rust</div> 
             </div>
         </a></td>`,`<td>
-        <a href="project_hoover_api.html">
+        <a href="project?p=hoover_api">
             <div class="project">
                 <h2 class="project-title"><b>Hoover Api</b></h2>
-                <p>The secret backend for this website.</p><div class="badge closed-source">Closed Source</div> <div class="badge stable">Stable</div> <div class="badge active">Active</div> <div class="badge rust">Language: rust</div> 
+                <p>The secret backend for this website.</p><div class="badge closed-source">Closed Source</div> <div class="badge stable">Stable</div> <div class="badge active">Active Development</div> <div class="badge rust">Language: rust</div><div class="badge python">Language: python</div> <div class="badge framework">Tool: robyn</div>
             </div>
         </a></td>`,
 ]

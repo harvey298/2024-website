@@ -116,7 +116,7 @@ with open("./projects.toml", "r") as f:
 
         maintenance = project["maintenance"]
         if maintenance == "active":
-            maintenance = '<div class="badge active">Active</div>'
+            maintenance = '<div class="badge active">Active Development</div>'
         elif maintenance == "maintenance":
             maintenance = '<div class="badge maintenance">In Maintenance</div>'
         else:
@@ -144,7 +144,7 @@ with open("./projects.toml", "r") as f:
                 tools += '<div class="badge framework">Tool: ' + tool + '</div>'
 
         buffer += f"""<td>
-        <a href="project_{name.replace(" ", "_").lower().replace("/", "")}.html">
+        <a href="project?p={name.replace(" ", "_").lower().replace("/", "")}">
             <div class="project">
                 <h2 class="project-title"><b>{pretty(name)}</b></h2>
                 <p>{description}.</p>{source_status} {dev_status} {maintenance} {languages} {tools}
@@ -164,3 +164,132 @@ with open("./projects/projects.js", "w+") as f:
 with open("./404.html", "r") as src:
     with open("./projects/404.html", "w+") as dest:
         dest.write(src.read())
+
+# Conversion to Hoover API project toml file
+with open("./projects.toml", "r") as f:
+    data = toml.load(f)
+
+    output = {
+        "default": {
+            "data_path": "./data/default_project",
+            "tag": []
+        }
+    }
+
+    for project in data["project"]:
+        # Collect the tags
+        tags = []
+
+        # Source Status
+        source_status = project["source_status"]
+        if source_status == "open":
+            tags.append({
+                "tag_type": "open_source",
+                "classes": [
+                    "badge", "open-source"
+                ],
+                "text": "Open Source"
+            })
+        elif source_status == "planned":
+            tags.append({
+                "tag_type": "planned",
+                "classes": [
+                    "badge", "planned-open-source"
+                ],
+                "text": "Planned to be Open Source"
+            })
+        else:
+            tags.append({
+                "tag_type": "closed_source",
+                "classes": [
+                    "badge", "closed-source"
+                ],
+                "text": "Closed Source"
+            })
+        
+        # Dev Status
+        dev_status = project["dev_status"]
+        if dev_status == "stable":
+            tags.append({
+                "tag_type": "stable",
+                "classes": [
+                    "badge", "stable"
+                ],
+                "text": "Stable"
+            })
+        elif dev_status == "beta":
+            tags.append({
+                "tag_type": "beta",
+                "classes": [
+                    "badge", "beta"
+                ],
+                "text": "Beta"
+            })
+        else:
+            tags.append({
+                "tag_type": "alpha",
+                "classes": [
+                    "badge", "alpha"
+                ],
+                "text": "Alpha"
+            })
+        
+        # Maintenance
+        maintenance = project["maintenance"]
+        if maintenance == "active":
+            tags.append({
+                "tag_type": "active",
+                "classes": [
+                    "badge", "active"
+                ],
+                "text": "Active Development"
+            })
+        elif maintenance == "maintenance":
+            tags.append({
+                "tag_type": "maintenance",
+                "classes": [
+                    "badge", "maintenance"
+                ],
+                "text": "In Maintenance"
+            })
+        else:
+            tags.append({
+                "tag_type": "deprecated",
+                "classes": [
+                    "badge", "deprecated"
+                ],
+                "text": "Deprecated"
+            })
+
+        # Languages
+        for lang in project["languages"]:
+            tags.append({
+                "tag_type": "language",
+                "classes": [
+                    "badge", lang, "blank-language"
+                ],
+                "text": lang.replace("js", "javascript").title()
+            })
+
+        # Tools
+        for tool in project["tools"]:
+            tags.append({
+                "tag_type": "framework",
+                "classes": [
+                    "badge", "framework", tool
+                ],
+                "text": tool
+            })
+
+        name = project["name"].replace(" ", "_").lower().replace("/", "")
+
+        output.update({
+            name: {
+                "data_path": "./data/" + name,
+                "tag": tags
+            }
+
+        })
+    
+    with open("./hoover_project.toml", "w+") as out:
+        toml.dump(output, out)

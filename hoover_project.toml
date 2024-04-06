@@ -1,0 +1,260 @@
+[default]
+data_path = "./data/default_project"
+tag = []
+
+[website]
+data_path = "./data/website"
+[[website.tag]]
+tag_type = "open_source"
+classes = [ "badge", "open-source",]
+text = "Open Source"
+
+[[website.tag]]
+tag_type = "alpha"
+classes = [ "badge", "alpha",]
+text = "Alpha"
+
+[[website.tag]]
+tag_type = "active"
+classes = [ "badge", "active",]
+text = "Active Development"
+
+[[website.tag]]
+tag_type = "language"
+classes = [ "badge", "js", "blank-language",]
+text = "Javascript"
+
+[[website.tag]]
+tag_type = "language"
+classes = [ "badge", "html", "blank-language",]
+text = "Html"
+
+[[website.tag]]
+tag_type = "language"
+classes = [ "badge", "css", "blank-language",]
+text = "Css"
+
+[[website.tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[[website.tag]]
+tag_type = "language"
+classes = [ "badge", "wasm", "blank-language",]
+text = "Wasm"
+
+[[website.tag]]
+tag_type = "framework"
+classes = [ "badge", "framework", "vite",]
+text = "vite"
+
+[olympus]
+data_path = "./data/olympus"
+[[olympus.tag]]
+tag_type = "closed_source"
+classes = [ "badge", "closed-source",]
+text = "Closed Source"
+
+[[olympus.tag]]
+tag_type = "stable"
+classes = [ "badge", "stable",]
+text = "Stable"
+
+[[olympus.tag]]
+tag_type = "maintenance"
+classes = [ "badge", "maintenance",]
+text = "In Maintenance"
+
+[[olympus.tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[[olympus.tag]]
+tag_type = "framework"
+classes = [ "badge", "framework", "pytorch",]
+text = "pytorch"
+
+[avaritia]
+data_path = "./data/avaritia"
+[[avaritia.tag]]
+tag_type = "closed_source"
+classes = [ "badge", "closed-source",]
+text = "Closed Source"
+
+[[avaritia.tag]]
+tag_type = "stable"
+classes = [ "badge", "stable",]
+text = "Stable"
+
+[[avaritia.tag]]
+tag_type = "active"
+classes = [ "badge", "active",]
+text = "Active Development"
+
+[[avaritia.tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[vigil]
+data_path = "./data/vigil"
+[[vigil.tag]]
+tag_type = "closed_source"
+classes = [ "badge", "closed-source",]
+text = "Closed Source"
+
+[[vigil.tag]]
+tag_type = "alpha"
+classes = [ "badge", "alpha",]
+text = "Alpha"
+
+[[vigil.tag]]
+tag_type = "active"
+classes = [ "badge", "active",]
+text = "Active Development"
+
+[[vigil.tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[[vigil.tag]]
+tag_type = "language"
+classes = [ "badge", "python", "blank-language",]
+text = "Python"
+
+[[vigil.tag]]
+tag_type = "framework"
+classes = [ "badge", "framework", "pytorch",]
+text = "pytorch"
+
+["steam.rs"]
+data_path = "./data/steam.rs"
+[["steam.rs".tag]]
+tag_type = "open_source"
+classes = [ "badge", "open-source",]
+text = "Open Source"
+
+[["steam.rs".tag]]
+tag_type = "beta"
+classes = [ "badge", "beta",]
+text = "Beta"
+
+[["steam.rs".tag]]
+tag_type = "active"
+classes = [ "badge", "active",]
+text = "Active Development"
+
+[["steam.rs".tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[passenger]
+data_path = "./data/passenger"
+[[passenger.tag]]
+tag_type = "planned"
+classes = [ "badge", "planned-open-source",]
+text = "Planned to be Open Source"
+
+[[passenger.tag]]
+tag_type = "stable"
+classes = [ "badge", "stable",]
+text = "Stable"
+
+[[passenger.tag]]
+tag_type = "maintenance"
+classes = [ "badge", "maintenance",]
+text = "In Maintenance"
+
+[[passenger.tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[[passenger.tag]]
+tag_type = "language"
+classes = [ "badge", "html", "blank-language",]
+text = "Html"
+
+[[passenger.tag]]
+tag_type = "language"
+classes = [ "badge", "css", "blank-language",]
+text = "Css"
+
+[[passenger.tag]]
+tag_type = "language"
+classes = [ "badge", "js", "blank-language",]
+text = "Javascript"
+
+[[passenger.tag]]
+tag_type = "framework"
+classes = [ "badge", "framework", "tauri",]
+text = "tauri"
+
+[[passenger.tag]]
+tag_type = "framework"
+classes = [ "badge", "framework", "wolfram/miquliz",]
+text = "wolfram/miquliz"
+
+[[passenger.tag]]
+tag_type = "framework"
+classes = [ "badge", "framework", "gpt-4",]
+text = "gpt-4"
+
+[venturenavigator]
+data_path = "./data/venturenavigator"
+[[venturenavigator.tag]]
+tag_type = "planned"
+classes = [ "badge", "planned-open-source",]
+text = "Planned to be Open Source"
+
+[[venturenavigator.tag]]
+tag_type = "beta"
+classes = [ "badge", "beta",]
+text = "Beta"
+
+[[venturenavigator.tag]]
+tag_type = "active"
+classes = [ "badge", "active",]
+text = "Active Development"
+
+[[venturenavigator.tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[hoover_api]
+data_path = "./data/hoover_api"
+[[hoover_api.tag]]
+tag_type = "closed_source"
+classes = [ "badge", "closed-source",]
+text = "Closed Source"
+
+[[hoover_api.tag]]
+tag_type = "stable"
+classes = [ "badge", "stable",]
+text = "Stable"
+
+[[hoover_api.tag]]
+tag_type = "active"
+classes = [ "badge", "active",]
+text = "Active Development"
+
+[[hoover_api.tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[[hoover_api.tag]]
+tag_type = "language"
+classes = [ "badge", "python", "blank-language",]
+text = "Python"
+
+[[hoover_api.tag]]
+tag_type = "framework"
+classes = [ "badge", "framework", "robyn",]
+text = "robyn"
+
