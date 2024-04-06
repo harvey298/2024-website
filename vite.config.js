@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         projects: resolve(__dirname, 'projects/index.html'),
+        project: resolve(__dirname, 'projects/project.html'),
         404: resolve(__dirname, '404.html'),
       },
     },
