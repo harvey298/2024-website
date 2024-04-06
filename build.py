@@ -144,7 +144,7 @@ with open("./projects.toml", "r") as f:
                 tools += '<div class="badge framework">Tool: ' + tool + '</div>'
 
         buffer += f"""<td>
-        <a href="project?p={name.replace(" ", "_").lower().replace("/", "")}">
+        <a href="project.html?p={name.replace(" ", "_").lower().replace("/", "")}">
             <div class="project">
                 <h2 class="project-title"><b>{pretty(name)}</b></h2>
                 <p>{description}.</p>{source_status} {dev_status} {maintenance} {languages} {tools}
