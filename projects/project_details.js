@@ -1,3 +1,4 @@
+import * as tracking from '../tracking/pkg/tracking.js';
 import * as wasm from '../project_render/pkg/project_render.js';
 
 document.querySelector('#app').innerHTML = `
@@ -21,5 +22,5 @@ Loading Project!
 
 </div>
 `
-
+await tracking.check_url_argument();
 document.querySelector(".card").innerHTML = await wasm.render();
