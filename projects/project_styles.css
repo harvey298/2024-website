@@ -1,6 +1,6 @@
 body {
   display: grid;
-  gap: 10px;
+  gap: 5px;
 }
 
 .card {
@@ -13,6 +13,11 @@ a {
   text-decoration: none;
 }
 
+table {
+  border-spacing: 12.5px 7px;
+  padding: 0px;
+}
+
 td::before {
   content: '';
   position: absolute;
@@ -23,9 +28,9 @@ td::before {
   pointer-events: none;
 }
 
-td:hover::before {
-  /* background: rgba(255, 255, 255, 0.1); */
-}
+/* td:hover::before {
+  background: rgba(255, 255, 255, 0.1);
+} */
 
 td:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -40,9 +45,9 @@ td:hover {
 
 td {
   border-radius: 20px;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5.5px;
+  /* margin: 3px; */
   min-width: 250px;
   /* min-height: 25em; */
 }

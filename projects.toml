@@ -52,14 +52,14 @@ source_status = "planned"
 dev_status = "stable"
 maintenance = "maintenance"
 languages = ["rust", "html","css", "js"]
-tools = ["tauri","wolfram/miquliz","gpt-4"]
+tools = ["tauri"] # ,"wolfram/miquliz","gpt-4"
 
 [[project]]
-name = "venture/navigator"
-description = "Job search engine"
-source_status = "planned"
-dev_status = "beta"
-maintenance = "active"
+name = "secret-santa"
+description = "Web based Secret Santa used in 2023"
+source_status = "closed"
+dev_status = "stable"
+maintenance = "deprecated"
 languages = ["rust"]
 tools = []
 
@@ -71,3 +71,69 @@ dev_status = "stable"
 maintenance = "active"
 languages = ["rust", "python"]
 tools = ["robyn"]
+
+[[project]]
+name = "venture/navigator"
+description = "Job search engine"
+source_status = "planned"
+dev_status = "beta"
+maintenance = "active"
+languages = ["rust"]
+tools = []
+
+[[project]]
+name = "aurpm"
+description = "Arch User Repository Package Manager"
+source_status = "open"
+dev_status = "stable"
+maintenance = "deprecated"
+languages = ["rust", "python"]
+tools = []
+src = "https://github.com/harvey298/aurpm"
+
+[[project]]
+name = "rust.rs"
+description = "Unofficial Rust+ for the desktop"
+source_status = "closed"
+dev_status = "beta"
+maintenance = "deprecated"
+languages = ["rust", "python"]
+tools = []
+
+[[project]]
+name = "mpd mc"
+description = "Music Player Daemon event based client for Minecraft"
+source_status = "open"
+dev_status = "stable"
+maintenance = "maintenance"
+languages = ["java"]
+tools = []
+src = "https://github.com/harvey298/mpd_controller"
+
+[[project]]
+name = "league of music 2"
+description = "League of Legeneds Compatible sound board"
+source_status = "planned"
+dev_status = "stable"
+maintenance = "maintenance"
+languages = ["rust"]
+tools = ["slint"]
+
+[[project]]
+name = "league of music"
+description = "League of Legeneds Compatible sound board"
+source_status = "open"
+dev_status = "stable"
+maintenance = "deprecated"
+languages = ["rust"]
+tools = []
+src = "https://github.com/harvey298/league-of-music"
+
+[[project]]
+name = "ultrabot"
+description = "Ultrakill Ai"
+source_status = "closed"
+dev_status = "alpha"
+maintenance = "active"
+languages = ["C#"]
+tools = []

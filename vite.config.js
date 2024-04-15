@@ -16,6 +16,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         projects: resolve(__dirname, 'projects/index.html'),
         project: resolve(__dirname, 'projects/project.html'),
+        games: resolve(__dirname, 'games/index.html'),
+        blog: resolve(__dirname, 'blog/index.html'),
         404: resolve(__dirname, '404.html'),
       },
     },

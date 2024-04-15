@@ -194,34 +194,24 @@ tag_type = "framework"
 classes = [ "badge", "framework", "tauri",]
 text = "tauri"
 
-[[passenger.tag]]
-tag_type = "framework"
-classes = [ "badge", "framework", "wolfram/miquliz",]
-text = "wolfram/miquliz"
+[secret-santa]
+data_path = "./data/secret-santa"
+[[secret-santa.tag]]
+tag_type = "closed_source"
+classes = [ "badge", "closed-source",]
+text = "Closed Source"
 
-[[passenger.tag]]
-tag_type = "framework"
-classes = [ "badge", "framework", "gpt-4",]
-text = "gpt-4"
+[[secret-santa.tag]]
+tag_type = "stable"
+classes = [ "badge", "stable",]
+text = "Stable"
 
-[venturenavigator]
-data_path = "./data/venturenavigator"
-[[venturenavigator.tag]]
-tag_type = "planned"
-classes = [ "badge", "planned-open-source",]
-text = "Planned to be Open Source"
+[[secret-santa.tag]]
+tag_type = "deprecated"
+classes = [ "badge", "deprecated",]
+text = "Deprecated"
 
-[[venturenavigator.tag]]
-tag_type = "beta"
-classes = [ "badge", "beta",]
-text = "Beta"
-
-[[venturenavigator.tag]]
-tag_type = "active"
-classes = [ "badge", "active",]
-text = "Active Development"
-
-[[venturenavigator.tag]]
+[[secret-santa.tag]]
 tag_type = "language"
 classes = [ "badge", "rust", "blank-language",]
 text = "Rust"
@@ -257,4 +247,173 @@ text = "Python"
 tag_type = "framework"
 classes = [ "badge", "framework", "robyn",]
 text = "robyn"
+
+[venturenavigator]
+data_path = "./data/venturenavigator"
+[[venturenavigator.tag]]
+tag_type = "planned"
+classes = [ "badge", "planned-open-source",]
+text = "Planned to be Open Source"
+
+[[venturenavigator.tag]]
+tag_type = "beta"
+classes = [ "badge", "beta",]
+text = "Beta"
+
+[[venturenavigator.tag]]
+tag_type = "active"
+classes = [ "badge", "active",]
+text = "Active Development"
+
+[[venturenavigator.tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[aurpm]
+data_path = "./data/aurpm"
+[[aurpm.tag]]
+tag_type = "open_source"
+classes = [ "badge", "open-source",]
+text = "Open Source"
+
+[[aurpm.tag]]
+tag_type = "stable"
+classes = [ "badge", "stable",]
+text = "Stable"
+
+[[aurpm.tag]]
+tag_type = "deprecated"
+classes = [ "badge", "deprecated",]
+text = "Deprecated"
+
+[[aurpm.tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[[aurpm.tag]]
+tag_type = "language"
+classes = [ "badge", "python", "blank-language",]
+text = "Python"
+
+["rust.rs"]
+data_path = "./data/rust.rs"
+[["rust.rs".tag]]
+tag_type = "closed_source"
+classes = [ "badge", "closed-source",]
+text = "Closed Source"
+
+[["rust.rs".tag]]
+tag_type = "beta"
+classes = [ "badge", "beta",]
+text = "Beta"
+
+[["rust.rs".tag]]
+tag_type = "deprecated"
+classes = [ "badge", "deprecated",]
+text = "Deprecated"
+
+[["rust.rs".tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[["rust.rs".tag]]
+tag_type = "language"
+classes = [ "badge", "python", "blank-language",]
+text = "Python"
+
+[mpd_mc]
+data_path = "./data/mpd_mc"
+[[mpd_mc.tag]]
+tag_type = "open_source"
+classes = [ "badge", "open-source",]
+text = "Open Source"
+
+[[mpd_mc.tag]]
+tag_type = "stable"
+classes = [ "badge", "stable",]
+text = "Stable"
+
+[[mpd_mc.tag]]
+tag_type = "maintenance"
+classes = [ "badge", "maintenance",]
+text = "In Maintenance"
+
+[[mpd_mc.tag]]
+tag_type = "language"
+classes = [ "badge", "java", "blank-language",]
+text = "Java"
+
+[league_of_music_2]
+data_path = "./data/league_of_music_2"
+[[league_of_music_2.tag]]
+tag_type = "planned"
+classes = [ "badge", "planned-open-source",]
+text = "Planned to be Open Source"
+
+[[league_of_music_2.tag]]
+tag_type = "stable"
+classes = [ "badge", "stable",]
+text = "Stable"
+
+[[league_of_music_2.tag]]
+tag_type = "maintenance"
+classes = [ "badge", "maintenance",]
+text = "In Maintenance"
+
+[[league_of_music_2.tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[[league_of_music_2.tag]]
+tag_type = "framework"
+classes = [ "badge", "framework", "slint",]
+text = "slint"
+
+[league_of_music]
+data_path = "./data/league_of_music"
+[[league_of_music.tag]]
+tag_type = "open_source"
+classes = [ "badge", "open-source",]
+text = "Open Source"
+
+[[league_of_music.tag]]
+tag_type = "stable"
+classes = [ "badge", "stable",]
+text = "Stable"
+
+[[league_of_music.tag]]
+tag_type = "deprecated"
+classes = [ "badge", "deprecated",]
+text = "Deprecated"
+
+[[league_of_music.tag]]
+tag_type = "language"
+classes = [ "badge", "rust", "blank-language",]
+text = "Rust"
+
+[ultrabot]
+data_path = "./data/ultrabot"
+[[ultrabot.tag]]
+tag_type = "closed_source"
+classes = [ "badge", "closed-source",]
+text = "Closed Source"
+
+[[ultrabot.tag]]
+tag_type = "alpha"
+classes = [ "badge", "alpha",]
+text = "Alpha"
+
+[[ultrabot.tag]]
+tag_type = "active"
+classes = [ "badge", "active",]
+text = "Active Development"
+
+[[ultrabot.tag]]
+tag_type = "language"
+classes = [ "badge", "C#", "blank-language",]
+text = "C#"
 
