@@ -61,6 +61,24 @@ td {
   font-size: 30px;
 }
 
+@keyframes rainbow {
+  0% { background-color: red; }
+  20% { background-color: orange; }
+  40% { background-color: yellow; }
+  60% { background-color: green; }
+  80% { background-color: purple; }
+  100% { background-color: red; }
+}
+
+.new {
+  background-color: red;
+  color: black;
+  /* position: relative; */
+  /* left: -100px; */
+  /* top: -10px; */
+  animation: rainbow 10s linear infinite;
+}
+
 .badge {
   display: inline-block;
   padding: 5px 10px;

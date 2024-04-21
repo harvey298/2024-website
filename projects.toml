@@ -2,11 +2,19 @@
 name = "website"
 description = "This website"
 source_status = "open"
+src = "https://github.com/marcohoovy/2024-website"
 dev_status = "alpha"
 maintenance = "active"
-languages = ["js", "html","css", "rust", "wasm"]
+languages = [
+    "js",
+    "html",
+    "css",
+    "rust",
+    "wasm",
+]
 tools = ["vite"]
-src = "https://github.com/harvey298/2024-website"
+epoch = 0
+new = false
 
 [[project]]
 name = "olympus"
@@ -16,15 +24,19 @@ dev_status = "stable"
 maintenance = "maintenance"
 languages = ["rust"]
 tools = ["pytorch"]
+epoch = 0
+new = false
 
 [[project]]
 name = "avaritia"
 description = "Cryptocurrency trading bot"
 source_status = "closed"
 dev_status = "stable"
-maintenance = "active"
+maintenance = "deprecated"
 languages = ["rust"]
 tools = []
+epoch = 0
+new = false
 
 [[project]]
 name = "vigil"
@@ -32,18 +44,25 @@ description = "bee-hive health"
 source_status = "closed"
 dev_status = "alpha"
 maintenance = "active"
-languages = ["rust", "python"]
+languages = [
+    "rust",
+    "python",
+]
 tools = ["pytorch"]
+epoch = 0
+new = false
 
 [[project]]
 name = "steam.rs"
 description = "Steamworks api in Rust-lang"
 source_status = "open"
+src = "https://github.com/garhow/steam-rs"
 dev_status = "beta"
 maintenance = "active"
 languages = ["rust"]
 tools = []
-src = "https://github.com/garhow/steam-rs"
+epoch = 0
+new = false
 
 [[project]]
 name = "passenger"
@@ -51,8 +70,15 @@ description = "Machine Learning powered computer assistant"
 source_status = "planned"
 dev_status = "stable"
 maintenance = "maintenance"
-languages = ["rust", "html","css", "js"]
-tools = ["tauri"] # ,"wolfram/miquliz","gpt-4"
+languages = [
+    "rust",
+    "html",
+    "css",
+    "js",
+]
+tools = ["tauri"]
+epoch = 0
+new = false
 
 [[project]]
 name = "secret-santa"
@@ -62,6 +88,8 @@ dev_status = "stable"
 maintenance = "deprecated"
 languages = ["rust"]
 tools = []
+epoch = 0
+new = false
 
 [[project]]
 name = "hoover api"
@@ -69,27 +97,39 @@ description = "The secret backend for this website"
 source_status = "closed"
 dev_status = "stable"
 maintenance = "active"
-languages = ["rust", "python"]
+languages = [
+    "rust",
+    "python",
+]
 tools = ["robyn"]
+epoch = 0
+new = false
 
 [[project]]
-name = "venture/navigator"
+name = "venture"
 description = "Job search engine"
-source_status = "planned"
-dev_status = "beta"
-maintenance = "active"
-languages = ["rust"]
+source_status = "closed"
+dev_status = "stable"
+maintenance = "deprecated"
+languages = []
 tools = []
+epoch = 0
+new = false
 
 [[project]]
 name = "aurpm"
 description = "Arch User Repository Package Manager"
 source_status = "open"
+src = "https://github.com/marcohoovy/aurpm"
 dev_status = "stable"
 maintenance = "deprecated"
-languages = ["rust", "python"]
+languages = [
+    "rust",
+    "python",
+]
 tools = []
-src = "https://github.com/harvey298/aurpm"
+epoch = 0
+new = false
 
 [[project]]
 name = "rust.rs"
@@ -97,18 +137,25 @@ description = "Unofficial Rust+ for the desktop"
 source_status = "closed"
 dev_status = "beta"
 maintenance = "deprecated"
-languages = ["rust", "python"]
+languages = [
+    "rust",
+    "python",
+]
 tools = []
+epoch = 0
+new = false
 
 [[project]]
 name = "mpd mc"
 description = "Music Player Daemon event based client for Minecraft"
 source_status = "open"
+src = "https://github.com/marcohoovy/mpd_controller"
 dev_status = "stable"
 maintenance = "maintenance"
 languages = ["java"]
 tools = []
-src = "https://github.com/harvey298/mpd_controller"
+epoch = 0
+new = false
 
 [[project]]
 name = "league of music 2"
@@ -118,16 +165,20 @@ dev_status = "stable"
 maintenance = "maintenance"
 languages = ["rust"]
 tools = ["slint"]
+epoch = 0
+new = false
 
 [[project]]
 name = "league of music"
 description = "League of Legeneds Compatible sound board"
 source_status = "open"
+src = "https://github.com/marcohoovy/league-of-music.git"
 dev_status = "stable"
 maintenance = "deprecated"
 languages = ["rust"]
 tools = []
-src = "https://github.com/harvey298/league-of-music"
+epoch = 1693315056
+new = false
 
 [[project]]
 name = "ultrabot"
@@ -137,3 +188,17 @@ dev_status = "alpha"
 maintenance = "active"
 languages = ["C#"]
 tools = []
+epoch = 0
+new = false
+
+[[project]]
+name = "archivist"
+description = "Project Sorter & Archiver"
+source_status = "open"
+src = "https://github.com/marcohoovy/archivist.git"
+dev_status = "stable"
+maintenance = "active"
+languages = []
+tools = []
+epoch = 1713646185
+new = true

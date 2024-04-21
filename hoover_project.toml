@@ -89,9 +89,9 @@ classes = [ "badge", "stable",]
 text = "Stable"
 
 [[avaritia.tag]]
-tag_type = "active"
-classes = [ "badge", "active",]
-text = "Active Development"
+tag_type = "deprecated"
+classes = [ "badge", "deprecated",]
+text = "Deprecated"
 
 [[avaritia.tag]]
 tag_type = "language"
@@ -248,27 +248,22 @@ tag_type = "framework"
 classes = [ "badge", "framework", "robyn",]
 text = "robyn"
 
-[venturenavigator]
-data_path = "./data/venturenavigator"
-[[venturenavigator.tag]]
-tag_type = "planned"
-classes = [ "badge", "planned-open-source",]
-text = "Planned to be Open Source"
+[venture]
+data_path = "./data/venture"
+[[venture.tag]]
+tag_type = "closed_source"
+classes = [ "badge", "closed-source",]
+text = "Closed Source"
 
-[[venturenavigator.tag]]
-tag_type = "beta"
-classes = [ "badge", "beta",]
-text = "Beta"
+[[venture.tag]]
+tag_type = "stable"
+classes = [ "badge", "stable",]
+text = "Stable"
 
-[[venturenavigator.tag]]
-tag_type = "active"
-classes = [ "badge", "active",]
-text = "Active Development"
-
-[[venturenavigator.tag]]
-tag_type = "language"
-classes = [ "badge", "rust", "blank-language",]
-text = "Rust"
+[[venture.tag]]
+tag_type = "deprecated"
+classes = [ "badge", "deprecated",]
+text = "Deprecated"
 
 [aurpm]
 data_path = "./data/aurpm"
@@ -416,4 +411,21 @@ text = "Active Development"
 tag_type = "language"
 classes = [ "badge", "C#", "blank-language",]
 text = "C#"
+
+[archivist]
+data_path = "./data/archivist"
+[[archivist.tag]]
+tag_type = "open_source"
+classes = [ "badge", "open-source",]
+text = "Open Source"
+
+[[archivist.tag]]
+tag_type = "stable"
+classes = [ "badge", "stable",]
+text = "Stable"
+
+[[archivist.tag]]
+tag_type = "active"
+classes = [ "badge", "active",]
+text = "Active Development"
 

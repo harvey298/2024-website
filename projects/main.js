@@ -6,7 +6,7 @@ document.querySelector('#app').innerHTML = `
 <div class="title">
   <h1>My Projects!</h1>
   <p>(Over the past 8 years)</p>
-  <p>This list isn't complete as adding over 100 projects isn't a priority</p>
+  <p>This list isn't complete as Archivist can only process Rust Projects currently (100 more to go)</p>
 </div>
 
 <input type="number" min="1" id="width_selector" placeholder="Rows"></input>

@@ -18,6 +18,7 @@ export default defineConfig({
         project: resolve(__dirname, 'projects/project.html'),
         games: resolve(__dirname, 'games/index.html'),
         blog: resolve(__dirname, 'blog/index.html'),
+        changelog: resolve(__dirname, 'changelog/index.html'),
         404: resolve(__dirname, '404.html'),
       },
     },
