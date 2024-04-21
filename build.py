@@ -320,10 +320,13 @@ document.querySelector("#app").innerHTML = `
 for i, commit in enumerate(repo.iter_commits()):
     message = commit.message.replace('`','\'')
 
-    if i == 0:
-        message += " - Latest commit"
+    time = commit.committed_datetime.strftime('%Y-%m-%d %H:%M:%S')
+
+    if i == 0: message += " - Latest commit"
+
+    time = f"<button class='time-btn'>{time}</button>"
     
-    buffer += f"<p>{message}</p><hr>"
+    buffer += f"<p>{message}</p>{time}<hr>"
 
 buffer += """ `; """
 
