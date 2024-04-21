@@ -83,10 +83,10 @@ new = false
 [[project]]
 name = "secret-santa"
 description = "Web based Secret Santa used in 2023"
-source_status = "closed"
+source_status = "planned"
 dev_status = "stable"
 maintenance = "deprecated"
-languages = ["rust"]
+languages = ["rust","html"]
 tools = []
 epoch = 0
 new = false

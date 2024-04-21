@@ -52,7 +52,7 @@ const PROJECTS = [
             <div class="project">
                 
                 <h2 class="project-title"><b>Secret-Santa</b></h2>
-                <p>Web based Secret Santa used in 2023.</p><div class="badge closed-source">Closed Source</div> <div class="badge stable">Stable</div> <div class="badge deprecated">Deprecated</div> <div class="badge rust">Language: rust</div> 
+                <p>Web based Secret Santa used in 2023.</p><div class="badge planned-open-source">Planned to be Open Source</div> <div class="badge stable">Stable</div> <div class="badge deprecated">Deprecated</div> <div class="badge rust">Language: rust</div><div class="badge html">Language: html</div> 
             </div>
         </a></td>`,`<td>
         <a href="project.html?p=hoover_api">

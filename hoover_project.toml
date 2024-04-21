@@ -197,9 +197,9 @@ text = "tauri"
 [secret-santa]
 data_path = "./data/secret-santa"
 [[secret-santa.tag]]
-tag_type = "closed_source"
-classes = [ "badge", "closed-source",]
-text = "Closed Source"
+tag_type = "planned"
+classes = [ "badge", "planned-open-source",]
+text = "Planned to be Open Source"
 
 [[secret-santa.tag]]
 tag_type = "stable"
@@ -215,6 +215,11 @@ text = "Deprecated"
 tag_type = "language"
 classes = [ "badge", "rust", "blank-language",]
 text = "Rust"
+
+[[secret-santa.tag]]
+tag_type = "language"
+classes = [ "badge", "html", "blank-language",]
+text = "Html"
 
 [hoover_api]
 data_path = "./data/hoover_api"
