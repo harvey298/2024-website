@@ -19,6 +19,7 @@ export default defineConfig({
         games: resolve(__dirname, 'games/index.html'),
         blog: resolve(__dirname, 'blog/index.html'),
         changelog: resolve(__dirname, 'changelog/index.html'),
+        factorio: resolve(__dirname, 'factorio/index.html'),
         404: resolve(__dirname, '404.html'),
       },
     },

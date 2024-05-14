@@ -1,0 +1,16 @@
+#nav-bar-element {
+    padding-left: 20px;
+}
+
+#nav-bar {
+    top: 0;
+    position: relative;
+}
+
+#content {
+    padding-top: 50px;
+}
+
+#server-address {
+    height: 20px;
+}
