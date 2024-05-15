@@ -20,6 +20,7 @@ export default defineConfig({
         blog: resolve(__dirname, 'blog/index.html'),
         changelog: resolve(__dirname, 'changelog/index.html'),
         factorio: resolve(__dirname, 'factorio/index.html'),
+        factorio_archive: resolve(__dirname, 'factorio/archive/index.html'),
         404: resolve(__dirname, '404.html'),
       },
     },
